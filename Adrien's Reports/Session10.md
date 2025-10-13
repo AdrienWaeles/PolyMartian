@@ -21,6 +21,7 @@ One solution is called 'Derivative on Measurement'; I explain it in the context 
 Error = DistanceSetpoint - DistanceTravelled
 
 So its derivative is equal to:  
+
 $$
 \frac{dError}{dt} = \frac{dDistanceSetpoint}{dt} - \frac{dDistanceTravelled}{dt}
 $$
