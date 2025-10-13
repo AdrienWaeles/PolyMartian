@@ -20,11 +20,17 @@ One solution is called 'Derivative on Measurement'; I explain it in the context 
 
 Error = DistanceSetpoint - DistanceTravelled
 
-So its derivative is equal to:
-\[ \frac{dError}{dt} = \frac{dDistanceSetpoint}{dt} - \frac{dDistanceTravelled}{dt} \]
+So its derivative is equal to:  
+$$
+\frac{dError}{dt} = \frac{dDistanceSetpoint}{dt} - \frac{dDistanceTravelled}{dt}
+$$
 
-However, DistanceSetpoint is the distance instruction, so it remains constant until a new instruction is sent. Consequently, its derivative is equal to zero. This leads to the following result:
-\[ \frac{dError}{dt} = - \frac{dDistanceTravelled}{dt} \]
+However, DistanceSetpoint is the distance instruction, so it remains constant until a new instruction is sent.  
+Consequently, its derivative is equal to zero. This leads to the following result:  
+
+$$
+\frac{dError}{dt} = - \frac{dDistanceTravelled}{dt}
+$$
 
 Now that our derivative is no longer directly dependent on the Setpoint, we avoid high-speed changes and prevent spikes in output when the setpoint changes.
 
