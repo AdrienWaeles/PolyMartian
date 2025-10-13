@@ -35,7 +35,7 @@ So a tip is to round all divisions down with the floor() function and then reduc
 4) Last but not least, we reduce numerical errors by recalculating the deceleration_distance with our new informations and this time without division so we reduce rounding error : 
 
 $$
-deceleration_{distance} = distance_{setpoint} - max_{speed} \cdot {constant_speed_time} - acceleration_{distance}
+deceleration_{distance} = distance_{setpoint} - max_{speed} \cdot constant_{speed_time} - acceleration_{distance}
 $$
 
 
