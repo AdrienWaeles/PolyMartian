@@ -22,11 +22,14 @@ entry 0x400805f0
 ets Apr 9 2024 09:22:53
 
 After some researchs i found out that on a classic ESP32 there are 6 pins which are used by internal Flash and thus musn't be connected to anything otherwise the chip will reboot indefinitely. The problem was simply solved by switching the cables on other pins, not used by internal flash, based on the following ESP32 Pinout diagramm made by uPesy : 
+
 <img src="Report's images\Session16\esp32_pinoutDiagramm_madeby_uPesy.png" width="400">
 
 ## Test of an encoder with ESP32
 Then I wired an Encoder to the ESP32 to verify it is still working as ESP32 works only with 3.3V signals so it may be incompatible with some numerical devices if they threashold is superior at 3.3V.
+
 <img src="Report's images\Session16\ESP32_encoder_wiring.jpg" width="400">
+
 But hopefully communications between our encoder and the esp32 worked perfectly so it wasn't necessary to use a logic level shifting chip.
 
 ## Temporary wiring
