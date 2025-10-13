@@ -34,8 +34,8 @@ So a tip is to round all divisions down with the floor() function and then reduc
     - equal to the distance_setpoint minus acceleration and deceleration distance, in a trapezoidal speed profile
 4) Last but not least, we reduce numerical errors by recalculating the deceleration_distance with our new informations and this time without division so we reduce rounding error : 
 
-$$ 
-deceleration_distance = distance_setpoint - max_speed*constantspeed_time - acceleration_distance 
+$$
+deceleration\_distance = distance\_setpoint - max\_speed \cdot constantspeed\_time - acceleration\_distance
 $$
 
 ## Next session tasks
