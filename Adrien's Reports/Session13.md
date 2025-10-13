@@ -33,7 +33,10 @@ So a tip is to round all divisions down with the floor() function and then reduc
     - equal to zero, in a triangle speed profile
     - equal to the distance_setpoint minus acceleration and deceleration distance, in a trapezoidal speed profile
 4) Last but not least, we reduce numerical errors by recalculating the deceleration_distance with our new informations and this time without division so we reduce rounding error : 
-$$ deceleration_distance = distance_setpoint - max_speed*constantspeed_time - acceleration_distance $$
+
+$$ 
+deceleration_distance = distance_setpoint - max_speed*constantspeed_time - acceleration_distance 
+$$
 
 ## Next session tasks
 Finish the whole new closed loop control algorithm including speed profiles displacements to test it on our playing table.
