@@ -78,8 +78,9 @@ errorDistance = \sqrt{(X_{theorical} - X_{real})^2 + (Y_{theorical} - Y_{real})^
 $$
 
 Euclidean norm to determine the distance between the points  
+
 $$
-(X_{theorical}, Y_{theorical}) \text{ and } (X_{real}, Y_{real})
+(X_{theorical}, Y_{theorical}) \;\text{and}\; (X_{real}, Y_{real})
 $$
 
 
